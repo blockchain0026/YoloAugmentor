@@ -1,0 +1,31 @@
+﻿<Application x:Class="YoloAugmentor.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:YoloAugmentor"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:muxc="http://schemas.modernwpf.com/2019"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--Modern WPF UI-->
+                <muxc:ThemeResources />
+                <muxc:XamlControlsResources />
+                
+                <!--Material Design-->
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml" />
+                <materialDesign:BundledTheme BaseTheme="Inherit"
+                                             PrimaryColor="Orange"
+                                             SecondaryColor="Red"
+                                             ColorAdjustment="{materialDesign:ColorAdjustment}" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <!--Tooltip Style-->
+            <Style TargetType="TextBlock">
+                <Setter Property="ToolTipService.InitialShowDelay"
+                        Value="0" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

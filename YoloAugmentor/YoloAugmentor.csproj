@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+		<ApplicationIcon>appicon.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="appicon.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="DynamicData" Version="7.4.3" />
+		<PackageReference Include="MaterialDesignColors" Version="2.0.6" />
+		<PackageReference Include="MaterialDesignExtensions" Version="3.3.0" />
+		<PackageReference Include="MaterialDesignThemes" Version="4.5.0" />
+		<PackageReference Include="MaterialDesignThemes.Wpf" Version="1.0.1" />
+		<PackageReference Include="Microsoft.WindowsAPICodePack.Shell" Version="1.1.0" />
+		<PackageReference Include="ModernWpfUI" Version="0.9.4" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+		<PackageReference Include="ReactiveUI" Version="16.3.10" />
+		<PackageReference Include="ReactiveUI.WPF" Version="16.3.10" />
+	</ItemGroup>
+
+</Project>
